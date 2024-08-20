@@ -1,0 +1,79 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.s-contacts {
+  padding: 90px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 20px 0 40px 0;
+  }
+
+  & .contact {
+    margin-bottom: 10px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+
+      & span {
+        font-size: 18px;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+      }
+    }
+
+
+    & .img {
+      width: 21px;
+      height: 21px;
+      object-fit: contain;
+
+      &__wrap {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        margin: 0 auto 15px auto;
+        background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      }
+    }
+
+  }
+
+  &__cta {
+    background-color: #D8D6D1;
+    padding: 20px 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100vw;
+      background: #D8D6D1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      margin-left: calc((-100vw + 100%) / 2);
+      z-index: -1;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      padding: 12px 12px 0 12px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute !important;
+
+    &--wrap {
+      height: 395px;
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 1;
+    }
+  }
+}
