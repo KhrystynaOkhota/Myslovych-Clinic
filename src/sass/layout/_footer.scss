@@ -6,11 +6,17 @@
   background: #1D1D1B;
   border-top: 1px solid #fff;
   position: relative;
+  //margin-top: 50px;
 
   & .logo {
     &__link {
       display: block;
       margin-bottom: 20px;
+    }
+
+    &__text {
+      color: #ffffff;
+      font-size: 20px;
     }
 
     &__wrap {
@@ -20,20 +26,6 @@
     }
   }
 
-  & .cta-form {
-    width: 100%;
-    @media (max-width: $breakpoint-md) {
-      max-width: 400px;
-    }
-
-    & .btn-primary {
-      margin-left: auto;
-      @media (max-width: $breakpoint-md) {
-        width: 100%;
-      }
-
-    }
-  }
 
   &-item {
     &:not(&:last-child) {
@@ -64,26 +56,52 @@
   }
 
   .menu {
-    display: flex;
-    flex-wrap: wrap;
+    &__heading {
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
 
     &-item {
-      flex: 0 0 50%;
-      margin-bottom: 24px;
+      & + .menu-item {
+        margin-top: 9px;
+      }
 
       & a {
-        @include fontSize(16, 18);
-        color: $black-main;
+        font-size: 18px;
+        color: #C1C1C1;
       }
+
     }
   }
 
+
   .contact {
     &__item {
+      display: grid;
+      grid-template-columns: 25px 1fr;
+      gap: 6px;
+
       & + .contact__item {
-        margin-top: 25px;
+        margin-top: 20px;
+      }
+
+      & i {
+        background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 23px;
       }
     }
+
+    &__title {
+      font-size: 20px;
+      color: #fff;
+    }
+
   }
 
   .social {
@@ -95,7 +113,7 @@
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      padding: 19px 25px;
+      padding: 24px 25px;
       transform: translateY(-50%);
       @media (max-width: $breakpoint-md) {
         justify-content: center;
@@ -105,6 +123,7 @@
 
     &__title {
       @include fontSize(24, 35);
+      color: #fff;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 20px;
       }
@@ -113,6 +132,13 @@
     &__item {
       & + .social__item {
         margin-left: 21px;
+      }
+
+      & i {
+        background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
       }
     }
   }

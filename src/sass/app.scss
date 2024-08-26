@@ -18,16 +18,17 @@
 @import "components/_breadcrumb";
 //@import "components/_seo-component";
 
-//@import "components/_modals";
+@import "components/_modals";
 @import "components/_same-sections";
 @import "components/_pagination";
-
+@import "components/_accordion";
 
 
 
 @import "pages/_home";
 @import "pages/_about";
 @import "pages/_blog";
-@import "pages/_portfolio";
+@import "pages/_services";
+@import "pages/_price";
 @import "pages/_contacts";
 @import "pages/_other";

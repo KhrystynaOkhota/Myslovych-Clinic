@@ -1,102 +1,90 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.s-other {
-  @media (max-width: $breakpoint-md) {
-    margin-top: 80px;
+.s-thanks {
+  height: 80vh;
+
+  &__description, & .s-thanks__heading-sub {
+    color: #1D1D1B;
   }
 
-  & .decor-bg {
-    width: 100%;
-    max-width: 402px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    @media (max-width: $breakpoint-md) {
-      max-width: 286px;
-      right: -15px;
-      transform: none;
-    }
-  }
+  &__heading {
+    margin-bottom: 12px;
 
-  &__content {
-    padding-left: 20px;
-    @media (max-width: $breakpoint-md) {
-      padding-left: 12px;
+    &-sub {
+      @include fontSize(26, 32);
+      margin-bottom: 12px;
     }
-  }
-
-  &__inner {
-    height: 100vh;
-    @media (min-width: $breakpoint-md) {
-      flex-direction: row-reverse;
-
-    }
-    @media (max-width: $breakpoint-md) {
-      height: auto;
-    }
-  }
-
-  & .img {
-    width: 100%;
-    max-width: 380px;
-    @media (max-width: $breakpoint-md) {
-      max-width: 260px;
-    }
-    @media (max-width: 400px) {
-      max-width: 220px;
-    }
-    margin: 0 auto;
   }
 
   & .description {
-    margin-bottom: 40px;
-    @media (max-width: $breakpoint-md) {
-      margin-bottom: 32px;
-    }
+
   }
 
-  & .btn-primary {
+  &__img {
+    height: 100%;
     width: 100%;
-    max-width: 180px;
+    object-fit: cover;
 
-    margin: 0 auto;
+    &-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+
+      &:after {
+        content: '';
+        background: radial-gradient(52.65% 86.07% at 52.65% 50%, #E9EAED 0%, rgba(233, 234, 237, 0.7) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.s-error {
+  height: 80vh;
+
+  &__description {
+    margin-bottom: 26px;
+    @include fontSize(40, 64);
   }
 
-  &.thanks {
+  &__number {
+    max-width: 385px;
+    height: 204px;
+    object-fit: contain;
+    margin: 0 auto 26px auto;
     @media (max-width: $breakpoint-md) {
-      padding: 152px 0;
-      & .img {
-        max-width: 132px;
-        margin-bottom: 108px;
-        margin-left: 0;
-        margin-right: auto;
-      }
-      & .decor-bg {
-        top: -152px;
-      }
-
+      max-width: 260px;
+      margin-bottom: 20px;
     }
   }
 
-  &.error {
-    @media (min-width: $breakpoint-md) {
-      & .img {
-        max-width: 100%;
-      }
-    }
-    @media (max-width: $breakpoint-md) {
-      padding: 123px 0;
-      & .img {
-        margin-bottom: 80px;
-      }
-      & .decor-bg {
-        top: -123px;
-      }
+  &__bg {
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    margin-left: auto;
 
+    &-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+
+      &:after {
+        content: '';
+        background: radial-gradient(52.65% 86.07% at 52.65% 50%, #E9EAED 0%, rgba(233, 234, 237, 0.7) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
-
-
 }

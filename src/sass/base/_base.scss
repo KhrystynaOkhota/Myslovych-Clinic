@@ -306,4 +306,55 @@ body {
   }
 }
 
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: .25em;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $breakpoint-md) {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 1
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0
+  }
+
+  & i {
+    @include fontSize(16, 24);
+    color: #ffff;
+  }
+
+  & .screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px)
+  }
+
+}
 

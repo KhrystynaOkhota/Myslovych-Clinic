@@ -1,0 +1,91 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.accordion {
+  padding-top: 8px;
+
+  &-item {
+    padding: 0;
+
+
+    //overflow: hidden;
+    padding: 25px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid transparent;
+    position: relative;
+    background-clip: padding-box;
+
+    &:not(&:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+     // background: linear-gradient(to bottom right, #22c1c3, #fdbb2d);
+
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+
+
+
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    &__header {
+      cursor: pointer;
+      width: 100%;
+
+      outline: none;
+      font-weight: 700;
+      @include fontSize(16, 20);
+      line-height: 15px;
+      color: #000;
+
+
+      & img {
+        width: 17px;
+        object-fit: contain;
+        margin-left: 4px;
+        @include transition(.4)
+      }
+
+    }
+
+    &__body {
+      display: none;
+
+      &-inner {
+        margin: 10px 0 0 0;
+        padding: 0 0 15px 0;
+        color: #000;
+        position: relative;
+        @include fontSize(14, 16);
+        line-height: 1.5;
+      }
+    }
+  }
+
+  table {
+    & caption {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+
+
+.active {
+  & .accordion-item__header {
+    & img {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+  }
+}

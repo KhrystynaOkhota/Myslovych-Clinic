@@ -2,9 +2,18 @@
 @import "../abstracts/variables";
 
 .s-contacts {
-  padding: 90px 0;
-  @media (max-width: $breakpoint-md) {
-    padding: 20px 0 40px 0;
+  &.--home {
+    padding: 90px 0 143px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 20px 0 109px 0;
+    }
+  }
+
+  &:not(&.--home) {
+    padding: 50px 0 60px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 35px 0 43px 0;
+    }
   }
 
   & .contact {
@@ -36,6 +45,11 @@
         border-radius: 10px;
         margin: 0 auto 15px auto;
         background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+
+        & i {
+          font-size: 21px;
+          color: #fff;
+        }
       }
     }
 
@@ -75,5 +89,43 @@
       overflow: hidden;
       z-index: 1;
     }
+  }
+
+  .map-info {
+    font-size: 24px;
+    text-align: center;
+    min-width: 250px;
+  }
+}
+
+.s-cta {
+  padding: 0 0 109px 0;
+
+  & .heading {
+    -webkit-text-fill-color: #fff;
+    margin-bottom: 19px;
+  }
+
+  & .btn-white {
+    width: 100%;
+  }
+
+  & .decor-large {
+    position: absolute;
+    bottom: 250px;
+    right: -128px;
+    height: 525px;
+    width: 365px;
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+    padding: 37px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
 }
