@@ -9,10 +9,6 @@
 
     <title>Myslovych-Clinic</title>
     <meta name="description" content=""/>
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png">  <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
 
 
@@ -21,15 +17,16 @@
 </head>
 <body>
 
-<div class="preloader">
+<div class="body-padding"></div>
 
-</div>
-
-
-<header class="header js-header">
+<header class="header js-header transparent">
     <!-- додати ці класи ===  js-header transparent ==== тільки на головну сторінку-->
     <div class=" container">
         <div class="header__inner d-flex align-middle align-justify">
+            <a href="index.html" class="logo__wrap">
+                <img src="assets/img/logo.svg" alt="Klan" class="logo">
+            </a>
+
             <div class="burger__wrap js-header align-middle align-center">
                 <div class="burger">
                     <span></span>
@@ -37,85 +34,15 @@
                     <span></span>
                 </div>
             </div>
-            <a href="index.html" class="logo__wrap">
-                <img src="assets/img/logo.svg" alt="Klan" class="logo">
-            </a>
-
-            <ul class="social d-flex d-md-none">
-                <li class="social__item">
-                    <a href="#" target="_self" class="d-flex align-center align-middle">
-                        <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="#" target="_self" class="d-flex align-center align-middle">
-                        <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="#" target="_self" class="d-flex align-center align-middle">
-                        <img src="assets/img/viber.svg" alt="viber" class="social__img">
-                    </a>
-                </li>
-            </ul>
 
             <div class="navbar">
-
-                <div class="navbar__top d-flex align-justify align-middle">
-
-
-                    <div class="contact d-flex align-middle align-left">
-
-
-                        <div class="contact__item d-flex align-justify align-middle">
-                            <img src="assets/img/phone.svg" alt="" class="img">
-                            <a href="tel:+380999999999" class="contact__title text-medium">+38 (099) 999 99 99</a>
-                        </div>
-                        <div class="contact__item d-flex align-justify align-middle">
-                            <img src="assets/img/pin.svg" alt="" class="contact__icon ">
-                            <a href="" class="contact__title text-medium">м.Київ, вул. Глибочицька, 23</a>
-                        </div>
-                        <div class="contact__item d-flex align-justify align-middle">
-                            <img src="assets/img/clock.svg" alt="" class="img">
-                            <div class="contact__title text-medium">ПН-ВС:з 8.00 до 20.00</div>
-                        </div>
-
-                    </div>
-
-
-                    <ul class="social d-none d-md-flex">
-                        <li class="social__item">
-                            <a href="#" target="_self" class="d-flex align-center align-middle">
-                                <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" target="_self" class="d-flex align-center align-middle">
-                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" target="_self" class="d-flex align-center align-middle">
-                                <img src="assets/img/viber.svg" alt="viber" class="social__img">
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
                 <nav class="navbar__menu">
                     <ul class="menu">
                         <li class="menu-item ">
-                            <a href="index.html">Головна</a>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="price.html">Ціни</a>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="services.html">Послуги</a>
+                            <a href="about.html">О нас</a>
                         </li>
                         <li class="menu-item">
-                            <a href="doctors.html">Лікарі</a>
+                            <a href="portfolio.html"> Портфолио</a>
                         </li>
                         <li class="menu-item">
                             <a href="blog.html">Новости</a>
@@ -126,6 +53,38 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="d-flex align-justify align-middle header__contacts">
+                    <a href="tel:000000000000" target="_blank" class="navbar__phone text-s text-semibold">+0 000 000 00
+                        00</a>
+                    <ul class="social d-flex d-md-none">
+                        <li class="social__item d-flex align-center align-middle">
+                            <a href="">
+                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                            </a>
+                        </li>
+                        <li class="social__item d-flex align-center align-middle">
+                            <a href="">
+                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="lang__wrap --relative">
+                    <div class="lang__current d-flex align-middle">
+                        <a href="/ru/">RU</a> <i class="icon-ar-bottom"></i> <!--поточна мова-->
+                    </div>
+
+                    <ul class="lang">
+                        <li class="lang-item"><a href="ru">RU</a>
+                        </li>
+                        <li class="lang-item "><a href="eng">ENG</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -134,133 +93,32 @@
 
 <main class="main overlap">
 
-    <section class="s-main swiper-entry">
-        <div class="container-fluid p-0">
+    <section class="s-banner d-flex align-middle --relative">
+        <div class="s-banner__img-wrap">
+            <img src="assets/img/test-bg.jpg" alt="" class="s-banner__img">
+        </div>
+        <div class="container overlap">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
-                    <div class="s-main__slider">
-                        <div class="swiper-container"
-                             data-options='{ "parallax":false, "slidesPerView":1, "spaceBetween": 0, "loop": true, "customFraction": true, "breakpoints": {"575": {"slidesPerView": 1,"spaceBetween": 0}, "992": {"slidesPerView": 1}, "1200": {"slidesPerView": 1},"1400": {"slidesPerView": 1}}}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <div class="bg desktop bgLoaded"
-                                             style=" background-image: url('assets/img/news-1.png');"></div>
-
-                                        <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
-
-                                        <div class="main-slide__info">
-                                            <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
-                                            <div class="main-slide__heading--sub">Сучасний медичний центр повного
-                                                циклу
-                                            </div>
-                                            <h2 class="main-slide__heading text-xl text-bold">Клініка сучасної
-                                                медицини<span>“Myslovych”</span></h2>
-                                            <div class="main-slide__description --relative">
-                                                Центри нашої мережі оснащені сучасним обладнанням, яке дозволяє
-                                                застосовувати інноваційні методи обстеження, діагностики захворювань та
-                                                лікування.
-                                            </div>
-
-                                            <a href="index.html"
-                                               class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
-                                                <i class="icon-btn-arrow"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <div class="bg desktop bgLoaded"
-                                             style=" background-image: url('assets/img/news-1.png');"></div>
-
-                                        <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
-
-                                        <div class="main-slide__info">
-                                            <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
-                                            <div class="">Сучасний медичний центр повного циклу</div>
-                                            <h2 class="main-slide__heading text-xl text-bold">Клініка сучасної
-                                                медицини<span>“Myslovych”</span></h2>
-                                            <div class="main-slide__description text-l --relative">
-                                                Центри нашої мережі оснащені сучасним обладнанням, яке дозволяє
-                                                застосовувати інноваційні методи обстеження, діагностики захворювань та
-                                                лікування.
-                                            </div>
-                                        </div>
-                                        <a href="index.html"
-                                           class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
-                                            <i class="icon-btn-arrow"></i> </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <div class="bg desktop bgLoaded"
-                                             style=" background-image: url('assets/img/news-1.png');"></div>
-
-                                        <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
-
-                                        <div class="main-slide__info">
-                                            <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
-                                            <div class="">Сучасний медичний центр повного циклу</div>
-                                            <h2 class="main-slide__heading text-xl text-bold">Клініка сучасної
-                                                медицини<span>“Myslovych”</span></h2>
-                                            <div class="main-slide__description text-l --relative">
-                                                Центри нашої мережі оснащені сучасним обладнанням, яке дозволяє
-                                                застосовувати інноваційні методи обстеження, діагностики захворювань та
-                                                лікування.
-                                            </div>
-                                            <a href="index.html"
-                                               class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
-                                                <i class="icon-btn-arrow"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-button__wrap d-flex align-left">
-                                    <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
-                                        <i class="icon-ar-left"></i> Назад
-                                    </div>
-                                    <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
-                                        Дальше <i class="icon-ar-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="kama_breadcrumbs">
+                        <span>
+                            <a href="https://hope.le-target.com" itemprop="item">
+                                <span>Головна</span>
+                            </a>
+                            <span class="kb_sep">/</span>
+                        <span class="kb_title">Послуги</span>
+                        </span>
                     </div>
+                    <h1 class="s-banner__heading text-xl text-bold">
+                        Послуги
+                    </h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="s-about">
-        <div class="container">
-            <div class="row m-row ">
-                <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
-                    <div class="img__wrap">
-                        <img src="assets/img/news-1.png" alt="" class="img">
-                    </div>
-                </div>
-                <div class=" offset-1 offset-md-0col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
-                    <h1 class="heading text-bold">Про нашу клініку</h1>
-                    <div class="description editor-style">
-                        <p>З 2005 року в м. Київ працює діагностичний центр “Myslovych”, у якому основний напрямок
-                            діяльності - це рання та своєчасна діагностика різних захворювань. 2018 року в Київ ми
-                            відкрили медичний центр, а з січня 2023 року працює сучасний багатопрофільний хірургічний
-                            стаціонар.</p>
-                        <p>2018 року в Київ ми відкрили медичний центр, а з січня 2023 року працює сучасний
-                            багатопрофільний хірургічний стаціонар. 2018 року в Київ ми відкрили медичний центр, а з
-                            січня 2023 року працює.</p>
-                    </div>
-                    <a href="about.html" class="btn btn-primary d-flex align-left align-middle"><span>Детальніше</span>
-                        <i class="icon-btn-arrow"></i> </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section s-services">
+    <section class="s-services --relative">
+        <img src="assets/img/decor.svg" alt="decor-" class="decor-large">
         <div class="container">
             <div class="row m-row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
@@ -270,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row m-row align-center">
+            <div class="row align-center">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
                     <a href="services-inner.html" class="services__item d-block">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
@@ -278,40 +136,40 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-2.png" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Естетична медицина</div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-3.jpg" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Флебологія</div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Пластична хірургія</div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Дерматологія</div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Дерматохірургія</div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <a href="services-inner.html" class="services__item d-block">
+                    <div class="services__item">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
                         <div class="services__title text-semibold text-center">Трихологія</div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -340,6 +198,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -362,6 +221,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -384,6 +244,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -406,6 +267,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -428,6 +290,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -450,6 +313,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -472,6 +336,7 @@
                         <ul class="social align-center">
                             <li class="social__item">
                                 <a href="#" target="_self" class="d-flex align-center align-middle">
+
                                     <i class="icon-instagram"></i>
                                 </a>
                             </li>
@@ -507,12 +372,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -533,12 +399,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -559,12 +426,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -585,12 +453,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -611,12 +480,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -637,12 +507,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -663,12 +534,13 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -681,158 +553,12 @@
         </div>
     </section>
 
-    <section class="s-consultation">
-        <div class="container overlap">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="s-consultation__inner">
-                        <h3 class="heading text-bold text-center">Онлайн-запис на консультацію</h3>
-                        <form>
-                            <div class="row m-row">
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                                    <div class="form-control">
-                                        <input class="form-control__input" type="text" name="" value=""
-                                               placeholder="Ім’я"
-                                               title="">
-                                        <i class="icon-user"></i>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                                    <div class="form-control">
-                                        <input class="form-control__input" type="tel" name="" value=""
-                                               placeholder="+38 (000) 000 00 00"
-                                               title="">
-                                        <i class="icon-phone"></i>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                                    <div class="form-control">
-                                        <input type="submit" value="Надіслати"
-                                               class="btn btn-white form-control__btn">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="s-consultation__form">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="s-latest-news">
-        <div class="container">
-            <div class="row ">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="heading__wrap --relative">
-                        <h3 class="heading text-bold text-xl text-center">Новини</h3>
-                        <img src="assets/img/decor.svg" alt="" class="decor">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row m-row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="article__wrap">
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="" class="btn btn-primary">Всі новини</a>
-            </div>
-        </div>
-    </section>
-
     <section class="s-contacts --home">
         <div class="container overlap">
             <div class="row m-row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
                     <div class="heading__wrap --relative">
                         <h3 class="heading text-bold text-xl text-center">Контакти</h3>
-                        <img src="assets/img/decor.svg" alt="" class="decor">
                     </div>
                 </div>
             </div>
@@ -852,6 +578,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="contact text-center">
                         <div class="img__wrap d-flex align-middle align-center">
+
                             <i class="icon-phone"></i>
                         </div>
                         <a href="tel:+380999999999" class="contact__title text-medium">+38 (099) 999 99 99</a>
@@ -860,6 +587,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="contact text-center">
                         <div class="img__wrap d-flex align-middle align-center">
+
                             <i class="icon-clock"></i>
                         </div>
                         <div class="contact__title text-medium">з 8.00 до 20.00
@@ -903,7 +631,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row align-justify m-row footer__main">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
 
@@ -915,8 +642,8 @@
                     <div class="logo__text">Сучасний медичний центр повного циклу</div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-item column">
-                <div class="menu__heading text-bold"> Меню</div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-item column">
+
                 <ul class="menu">
                     <li class="menu-item  current-menu-item">
                         <a href="index.html">Головна</a>
@@ -938,59 +665,27 @@
                     </li>
                 </ul>
             </div>
-
-
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-item column">
-                <div class="menu__heading text-bold"> Послуги</div>
-                <ul class="menu">
-                    <li class="menu-item  current-menu-item">
-                        <a href="services-inner.html">Трансплантація волосся</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html"> Естетична медицина</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html">Флебологія</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html"> Пластична хірургія</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html"> Дерматологія</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html">Дерматохірургія</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="services-inner.html">Трихологія</a>
-                    </li>
-                </ul>
-            </div>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12  footer-item --relative column">
-                <div class="menu__heading text-bold"> Контакти</div>
-                <ul>
-                    <li class="contact__item">
-                        <i class="icon-phone"></i>
-                        <a href="tel:+380999999999" class="contact__title text-medium">+38 (099) 999 99 99</a>
+                <ul class="social__list d-flex align-middle align-right">
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <img src="assets/img/instagram.svg" alt="instagram" class="icon">
+                        </a>
                     </li>
-
-                    <li class="contact__item">
-                        <i class="icon-message"></i>
-                        <a href="mailto:myslovich_clinic@gmail.com"
-                           class="contact__title text-medium">myslovich_clinic@gmail.com</a>
-                    </li>
-                    <li class="contact__item">
-                        <i class="icon-pin"></i>
-                        <a href="" class="contact__title text-medium">м.Київ, вул. Глибочицька, 23</a>
-                    </li>
-                    <li class="contact__item">
-                        <i class="icon-clock"></i>
-                        <div class="contact__title text-medium">з 8.00 до 20.00
-                            <span>(без вихідних та свят)</span></div>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <img src="assets/img/whatsapp.svg" alt="whatsapp" class="icon">
+                        </a>
                     </li>
                 </ul>
-
-
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="tel:+00000000000">+0 000 000 00 00</a>
+                    </li>
+                    <li class="contact__item">
+                        9VW8+X5W, Təbriz küçəsi, Bakı, Азербайджан
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="row footer__bottom">
@@ -1012,11 +707,6 @@
         </div>
     </div>
 </footer>
-
-<a class="top-link show" id="js-top">
-    <span class="screen-reader-text d-none">Back to top</span>
-    <i class="icon-ar-top"></i>
-</a>
 
 <script src="./assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
@@ -1123,32 +813,6 @@
     $(window).on('load', function () {
         initializeMap();
     });
-</script>
-
-<script>
-    const scrollToTopButton = document.getElementById('js-top');
-    const scrollFunc = () => {
-            let y = window.scrollY;
-            if (y > 0) {
-                scrollToTopButton.className = "top-link show";
-            } else {
-                scrollToTopButton.className = "top-link hide";
-            }
-        }
-    ;
-    window.addEventListener("scroll", scrollFunc);
-    const scrollToTop = () => {
-            const c = document.documentElement.scrollTop || document.body.scrollTop;
-            if (c > 0) {
-                window.requestAnimationFrame(scrollToTop);
-                window.scrollTo(0, c - c / 10);
-            }
-        }
-    ;
-    scrollToTopButton.onclick = function (e) {
-        e.preventDefault();
-        scrollToTop();
-    }
 </script>
 </body>
 </html>

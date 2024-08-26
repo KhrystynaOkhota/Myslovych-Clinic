@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <meta name="format-detection" content="telephone=no"/>
 
-    <title>Klan</title>
+    <title>Myslovych-Clinic</title>
     <meta name="description" content=""/>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
 
@@ -17,26 +17,10 @@
 </head>
 <body>
 
-<div class="preloader">
-
-</div>
-
-<div class="body-grid">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
-<header class="header">
+<header class="header js-header">
     <!-- додати ці класи ===  js-header transparent ==== тільки на головну сторінку-->
     <div class=" container">
         <div class="header__inner d-flex align-middle align-justify">
-            <a href="index.html" class="logo__wrap">
-                <img src="assets/img/logo.svg" alt="Klan" class="logo">
-            </a>
-
             <div class="burger__wrap js-header align-middle align-center">
                 <div class="burger">
                     <span></span>
@@ -44,15 +28,85 @@
                     <span></span>
                 </div>
             </div>
+            <a href="index.html" class="logo__wrap">
+                <img src="assets/img/logo.svg" alt="Klan" class="logo">
+            </a>
+
+            <ul class="social d-flex d-md-none">
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/viber.svg" alt="viber" class="social__img">
+                    </a>
+                </li>
+            </ul>
 
             <div class="navbar">
+
+                <div class="navbar__top d-flex align-justify align-middle">
+
+
+                    <div class="contact d-flex align-middle align-left">
+
+
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/phone.svg" alt="" class="img">
+                            <a href="tel:+380999999999" class="contact__title text-medium">+38 (099) 999 99 99</a>
+                        </div>
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/pin.svg" alt="" class="contact__icon ">
+                            <a href="" class="contact__title text-medium">м.Київ, вул. Глибочицька, 23</a>
+                        </div>
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/clock.svg" alt="" class="img">
+                            <div class="contact__title text-medium">ПН-ВС:з 8.00 до 20.00</div>
+                        </div>
+
+                    </div>
+
+
+                    <ul class="social d-none d-md-flex">
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/viber.svg" alt="viber" class="social__img">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
                 <nav class="navbar__menu">
                     <ul class="menu">
                         <li class="menu-item ">
-                            <a href="about.html">О нас</a>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="price.html">Ціни</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="services.html">Послуги</a>
                         </li>
                         <li class="menu-item">
-                            <a href="portfolio.html"> Портфолио</a>
+                            <a href="doctors.html">Лікарі</a>
                         </li>
                         <li class="menu-item">
                             <a href="blog.html">Новости</a>
@@ -63,60 +117,36 @@
                         </li>
                     </ul>
                 </nav>
-
-                <div class="d-flex align-justify align-middle header__contacts">
-                    <a href="tel:000000000000" target="_blank" class="navbar__phone text-s text-semibold">+0 000 000 00
-                        00</a>
-                    <ul class="social d-flex d-md-none">
-                        <li class="social__item d-flex align-center align-middle">
-                            <a href="">
-                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
-                            </a>
-                        </li>
-                        <li class="social__item d-flex align-center align-middle">
-                            <a href="">
-                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="lang__wrap --relative">
-                    <div class="lang__current d-flex align-middle">
-                        <a href="/ru/">RU</a> <i class="icon-ar-bottom"></i> <!--поточна мова-->
-                    </div>
-
-                    <ul class="lang">
-                        <li class="lang-item"><a href="ru">RU</a>
-                        </li>
-                        <li class="lang-item "><a href="eng">ENG</a>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </div>
 </header>
 
+
 <main class="main overlap">
 
-    <section class="s-other thanks --relative">
-        <div class="container">
-            <div class="row s-other__inner d-flex align-middle align-center">
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 --relative">
-                    <img src="assets/img/thanks.svg" alt="thanks" class="img">
-                    <img src="assets/img/decor.svg" alt="decor" class="decor-bg">
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="s-other__content">
-                        <h1 class="heading decor no-margin decor text-xl mb-32 text-bold --relative">Спасибо!</h1>
-
-                        <div class="description text-l mb-32">Ваше сообщение отправлено. Мы свяжемся с Вами ближайшее
-                            время.
+    <section class="s-thanks d-flex align-middle --relative">
+        <div class="s-thanks__img-wrap">
+            <img src="assets/img/thanks.jpg" alt="" class="s-thanks__img">
+        </div>
+        <div class="container overlap">
+            <div class="row align-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <div class="s-thanks__inner text-center">
+                        <h1 class="s-thanks__heading text-xl text-bold">
+                            Дякуємо за звернення!
+                        </h1>
+                        <div class="s-thanks__heading-sub text-medium">Найближчим часом Ми з Вами зв'яжемось для
+                            консультації по вашому
+                            питанню.
                         </div>
+                        <div class="description">
+                            <p>Дякуємо, ви зробили правильний вибір!</p>
+                            <p>З повагою, команда клініки “Myslovych”</p>
+                        </div>
+                        <a href="index.html"
+                           class="btn btn-primary d-flex align-center align-middle"><span>На головну</span> <i
+                                class="icon-btn-arrow"></i> </a>
                     </div>
                 </div>
             </div>
@@ -126,72 +156,99 @@
 </main>
 
 <footer class="footer overlap">
-    <div class="footer__main">
-        <div class="container">
-            <div class="row align-justify">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="index.html" class="logo__wrap">
-                        <img src="assets/img/logo.svg" alt="Klan" class="logo">
-                    </a>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-item ">
-                    <ul class="menu">
-                        <li class="menu-item  current-menu-item">
-                            <a href="about.html">О нас</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="portfolio.html"> Портфолио</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="blog.html">Новости</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12  footer-item --relative">
-                    <ul class="social__list d-flex align-middle align-right">
-                        <li class="social__item align-middle">
-                            <a href="" class="social__link">
-                                <img src="assets/img/instagram.svg" alt="instagram" class="icon">
+
+    <div class="container">
+        <div class="row align-justify m-row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
+                <div class="social__wrap d-flex align-middle align-justify">
+                    <div class="social__title">Підписуйся на наші соц мережі</div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <i class="icon-instagram"></i>
                             </a>
                         </li>
-                        <li class="social__item align-middle">
-                            <a href="" class="social__link">
-                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="icon">
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <i class="icon-facebook"></i>
                             </a>
-                        </li>
-                    </ul>
-                    <ul class="contact__list">
-                        <li class="contact__item">
-                            <a href="tel:+00000000000">+0 000 000 00 00</a>
-                        </li>
-                        <li class="contact__item">
-                            9VW8+X5W, Təbriz küçəsi, Bakı, Азербайджан
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer__bottom">
-        <div class="container">
-            <div class="row">
+        <div class="row align-justify m-row footer__main">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
 
-                <div class="col-xl-8">© 2024 KLAN | Все права защищены <span
-                        class="f-divider">&nbsp;</span><a
-                        href="/privacy">Політика конфіденційності</a></div>
+                <div class="logo__wrap">
+                    <a href="index.html" class="logo__link">
+                        <img src="assets/img/logo.svg" alt="Myslovych Clinic" class="logo">
+                    </a>
 
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="develop d-flex align-middle align-right">
-                        <div class="develop__text">Разработано:</div>
-                        <a href="https://redstone.media/" class="d-inline-flex align-items-center develop__link">
-                            <img src="assets/img/WebTune-logo.svg">
-                        </a>
-                    </div>
+                    <div class="logo__text">Сучасний медичний центр повного циклу</div>
                 </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-item column">
 
+                <ul class="menu">
+                    <li class="menu-item  current-menu-item">
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="price.html"> Ціни</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="services.html">Послуги</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="doctors.html">Лікарі</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog.html">Новини</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacts.html">Новини</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12  footer-item --relative column">
+                <ul class="social__list d-flex align-middle align-right">
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <img src="assets/img/instagram.svg" alt="instagram" class="icon">
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <img src="assets/img/whatsapp.svg" alt="whatsapp" class="icon">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="tel:+00000000000">+0 000 000 00 00</a>
+                    </li>
+                    <li class="contact__item">
+                        9VW8+X5W, Təbriz küçəsi, Bakı, Азербайджан
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer__bottom">
+
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="copyright">
+                    Myslovich 2024 Всі права захищено
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="develop d-flex align-middle align-right">
+                    <div class="develop__text">Розробка</div>
+                    <a href="" class="d-inline-flex align-items-center develop__link">
+                        WEBTUNE
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -209,7 +266,7 @@
         var element = document.getElementById('map');
         var options = {
             zoom: 15,
-            center: {lat: 50.47253296158417, lng: 30.443476447314264},
+            center: {lat: 50.462977825823856, lng: 30.49312623977225},
             styles: [{"elementType": "geometry", "stylers": [{"color": "#f5f5f5"}]}, {
                 "elementType": "labels.icon",
                 "stylers": [{"visibility": "off"}]
@@ -275,9 +332,9 @@
         };
         var myMap = new google.maps.Map(element, options);
         var markers = [{
-            coordinates: {lat: 50.47253296158417, lng: 30.443476447314264},
-            image: "assets/img/placeholder.png",
-            info: "<div class='map-info'><h4>test</h4><div>test</div><a href='tel:354678'>346577ijhgfv</a></div>"
+            coordinates: {lat: 50.462977825823856, lng: 30.49312623977225},
+            image: "assets/img/placeholder.svg",
+            info: "<div class='map-info'>м.Київ, вул. Глибочицька, 23</div>"
         },];
 
         function addMarker(properties) {
