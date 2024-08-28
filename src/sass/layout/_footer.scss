@@ -22,6 +22,9 @@
     &__wrap {
       @media (max-width: $breakpoint-md) {
         margin-bottom: 32px;
+
+        width: auto;
+        height: auto;
       }
     }
   }
@@ -84,6 +87,7 @@
       display: grid;
       grid-template-columns: 25px 1fr;
       gap: 6px;
+      align-items: center;
 
       & + .contact__item {
         margin-top: 20px;
@@ -93,19 +97,42 @@
         background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 23px;
+
+
+        &.icon {
+          &-phone {
+            font-size: 18px;
+          }
+
+          &-message {
+            font-size: 16px;
+          }
+
+          &-pin {
+            font-size: 23px;
+          }
+
+          &-clock {
+            font-size: 20px;
+          }
+        }
       }
     }
 
     &__title {
       font-size: 20px;
       color: #fff;
+
+      & span {
+        font-size: 18px;
+        font-weight: 300;
+        display: block;
+      }
     }
 
   }
 
-  .social {
-
+  & .social {
     align-items: end;
 
     &__wrap {
@@ -143,8 +170,7 @@
     }
   }
 
-  .develop {
-
+  & .develop {
     @media (min-width: $breakpoint-md) {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
@@ -159,37 +185,24 @@
       margin-top: 24px
     }
 
-    &__link {
-      margin-left: 10px;
+    &__link, &__text {
       font-size: 18px;
+    }
+
+    &__text {
+      color: rgba(255, 255, 255, .6);
+    }
+
+    &__link {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 1);
+      padding-left: 10px;
     }
   }
 
-  .copyright {
-    & span, & a {
-      @include fontSize(16, 18);
-      color: #565656;
-    }
-
-    & span {
-      @media (min-width: $breakpoint-md) {
-        padding-right: 48px;
-        position: relative;
-        &:after {
-          content: '';
-          width: 1px;
-          height: 100%;
-          background-color: rgba(0, 0, 0, .2);
-          position: absolute;
-          right: 24px;
-          top: 0;
-        }
-      }
-      @media (max-width: $breakpoint-md) {
-        display: block;
-        margin-bottom: 12px;
-      }
-    }
+  & .copyright {
+    font-size: 18px;
+    color: rgba(255, 255, 255, .6);
   }
 }
 

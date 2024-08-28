@@ -9,7 +9,7 @@
 
 
     //overflow: hidden;
-    padding: 25px;
+
     border-radius: 10px;
     background: #fff;
     border: 1px solid transparent;
@@ -27,12 +27,7 @@
       bottom: -1px;
       left: -1px;
       right: -1px;
-     // background: linear-gradient(to bottom right, #22c1c3, #fdbb2d);
-
       background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
-
-
-
       z-index: -1;
       border-radius: 10px;
     }
@@ -40,7 +35,7 @@
     &__header {
       cursor: pointer;
       width: 100%;
-
+      padding: 25px;
       outline: none;
       font-weight: 700;
       @include fontSize(16, 20);
@@ -61,12 +56,11 @@
       display: none;
 
       &-inner {
-        margin: 10px 0 0 0;
-        padding: 0 0 15px 0;
         color: #000;
         position: relative;
         @include fontSize(14, 16);
         line-height: 1.5;
+
       }
     }
   }

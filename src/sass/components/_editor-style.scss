@@ -13,7 +13,7 @@
     & p {
 
       font-weight: 400;
-      @include fontSize(14, 18);
+      @include fontSize(16, 20);
       line-height: 130%;
       margin-bottom: 32px;
       color:$body-text;
@@ -28,6 +28,10 @@
       font-weight: bold;
       margin-bottom: 18px;
       line-height: 1.25;
+
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     & h2 {
@@ -120,7 +124,7 @@
 
     & ul, & ol {
       margin-bottom: 32px;
-      padding-left: 30px;
+      padding-left: 40px;
       list-style-type: none;
       & li {
         font-weight: normal;
@@ -138,18 +142,18 @@
 
         &::before {
           content: "";
-          width: 4px;
-          height: 4px;
-          border-radius: 100%;
+          width: 30px;
+          height: 13px;
+          background: url(../img/check.svg);
           position: absolute;
-          top: 50%;
-          left: 10px;
+          top: 7px;
+          left: -40px;
         }
       }
     }
 
     & ul {
-      list-style: disc;
+     // list-style: disc;
     }
 
     & ol {

@@ -28,6 +28,7 @@ jQuery(function ($) {
         if (!options.pagination)
             options.pagination = {
                 el: $p.find('.swiper-pagination')[0],
+                type: 'progressbar',
                 clickable: true
             };
         if (!options.navigation)

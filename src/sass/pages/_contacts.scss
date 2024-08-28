@@ -2,6 +2,13 @@
 @import "../abstracts/variables";
 
 .s-contacts {
+  &.mb-170 {
+    margin-bottom: 170px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 120px;
+    }
+  }
+
   &.--home {
     padding: 90px 0 143px 0;
     @media (max-width: $breakpoint-md) {
@@ -127,5 +134,8 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    @media (max-width: $breakpoint-md) {
+      padding: 20px 20px 28px 20px;
+    }
   }
 }

@@ -158,6 +158,13 @@
       }
     }
 
+    &__experience {
+      right: 0;
+      top: 0;
+      left: auto;
+      bottom: auto;
+    }
+
     &__position {
       @include fontSize(20, 24);
       margin-bottom: 24px;
@@ -185,7 +192,7 @@
       }
 
       & ul, & ol {
-        padding-left: 41px;
+        padding-left: 40px;
         list-style-type: none;
 
         & li {
@@ -204,12 +211,12 @@
 
           &::before {
             content: "";
-            width: 4px;
-            height: 4px;
-            border-radius: 100%;
+            width: 30px;
+            height: 13px;
+            background: url("../img/check.svg");
             position: absolute;
-            top: 50%;
-            left: 10px;
+            top: 7px;
+            left: -40px;
           }
 
           & + li {
@@ -258,8 +265,18 @@
 }
 
 .s-about {
-  padding: 0;
-  //transform: translateY(-91px);
+  padding: 90px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 30px 0;
+  }
+
+  & .decor-large {
+    width: 365px;
+    height: 525px;
+    position: absolute;
+    right: -134px;
+    bottom: -60px;
+  }
 
   & .heading {
 
@@ -271,12 +288,15 @@
 
   &__content {
     padding: 42px 0 112px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 23px 0 0 0;
+    }
 
     & .decor {
       position: absolute;
       width: 128px;
       height: 205px;
-      top: 91px;
+      top: 0;
       left: -59px;
       @media (max-width: $breakpoint-md) {
         display: none;
@@ -285,16 +305,19 @@
   }
 
   & .img {
-
     border-radius: 10px;
     height: 100%;
     object-fit: cover;
 
     &__wrap {
-      height: calc(100% + 91px);
-      margin-top: -91px;
+      height: calc(100% + 140px);
+      margin-top: -140px;
       z-index: 2;
       position: relative;
+      @media (max-width: $breakpoint-md) {
+        height: auto;
+        margin-top: 0;
+      }
     }
   }
 }
@@ -302,6 +325,16 @@
 .s-owner {
   background: linear-gradient(81.5deg, #FFFFFF 21.75%, #E9EAEE 54.83%, #FFFFFF 82.21%);
   margin: 60px 0 50px 0;
+  @media (max-width: $breakpoint-md) {
+    background: transparent;
+    margin: 15px 0;
+  }
+
+  & .row {
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column-reverse;
+    }
+  }
 
   & .img {
     height: 100%;
@@ -312,9 +345,12 @@
       border: 5px solid #fff;
       border-radius: 10px;
       overflow: hidden;
-
-      height: calc(100% + 110px);
-      transform: translateY(-50px);
+      position: relative;
+      z-index: 2;
+      @media (min-width: $breakpoint-md) {
+        height: calc(100% + 110px);
+        transform: translateY(-50px);
+      }
     }
   }
 
@@ -325,17 +361,31 @@
       border-radius: 10px;
       @include fontSize(20, 27);
       color: #000000;
+      @media (max-width: $breakpoint-md) {
+        padding: 78px 8px 92px 25px;
+        margin: 0;
+        margin-top: -35px;
+      }
 
       &:after {
         top: 13px;
         right: 60px;
+        @media (max-width: $breakpoint-md) {
+          top: 50px;
+          right: 10px;
+        }
       }
 
       &:before {
         bottom: 40px;
         left: 30px;
+        @media (max-width: $breakpoint-md) {
+          bottom: 53px;
+          left: 5px;
+        }
       }
     }
+
     &__signature {
       width: 133px;
       height: 92px;
@@ -343,14 +393,23 @@
       position: absolute;
       bottom: 11px;
       right: -15px;
-
+      @media (max-width: $breakpoint-md) {
+        bottom: 13px;
+        right: 18px;
+      }
+      @media (max-width: 360px) {
+        width: 105px;
+        height: 65px;
+      }
     }
   }
 }
 
 .s-mission {
   padding-top: 60px;
-
+  @media (max-width: $breakpoint-md) {
+    padding-top: 35px;
+  }
   & .heading {
     &__wrap {
       padding-left: 59px;
@@ -399,9 +458,11 @@
       }
       @media (max-width: $breakpoint-md) {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
       }
       @media (max-width: $breakpoint-sm) {
         grid-template-columns: 1fr;
+        gap: 10px;
       }
     }
 
@@ -419,6 +480,7 @@
         align-items: center;
         padding: 22px;
       }
+
       &::after {
         content: '';
         position: absolute;
@@ -462,7 +524,6 @@
     }
   }
 }
-
 
 .s-introduce {
 
@@ -529,86 +590,6 @@
   }
 }
 
-.s-values {
-  & .heading {
-    &.decor {
-      &:after {
-        content: '';
-        height: 35px;
-        top: 8px;
-        transform: none;
-        @media (max-width: $breakpoint-md) {
-          top: 1px;
-        }
-      }
-    }
-  }
-
-  .values {
-    &__wrap {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      @media (max-width: $breakpoint-sm) {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-    }
-
-    &__item {
-      padding: 0 20px;
-      @media (max-width: $breakpoint-md) {
-        padding: 0 12px;
-      }
-
-      &:nth-child(even) {
-        @media (min-width: $breakpoint-md) {
-
-          margin-top: 84px;
-        }
-      }
-    }
-
-    &__img {
-      &-wrap {
-        width: 44px;
-        height: 44px;
-        margin-bottom: 32px;
-        @media (max-width: $breakpoint-sm) {
-          width: 32px;
-          height: 32px;
-          margin-bottom: 18px;
-        }
-
-        &:after {
-          content: '';
-          width: 2px;
-          height: calc(100% + 2px);
-          position: absolute;
-          left: -20px;
-          top: -1px;
-          background-color: #A59389;
-          @media (max-width: $breakpoint-md) {
-            left: -12px;
-          }
-        }
-      }
-    }
-
-    &__heading {
-      margin-bottom: 16px;
-      @media (max-width: $breakpoint-sm) {
-        margin-bottom: 12px;
-      }
-    }
-
-    &__description {
-      @include fontSize(14, 16);
-      color: #565656;
-      line-height: 140%;
-    }
-  }
-}
 
 .s-experience {
   &__inner {
@@ -637,140 +618,6 @@
   }
 }
 
-.s-history {
-
-
-  & .heading {
-    margin-bottom: 44px;
-  }
-
-  .gallery-top {
-    @media (max-width: $breakpoint-md) {
-      height: auto;
-    }
-  }
-
-  .gallery-bottom {
-    height: auto;
-    @media (max-width: $breakpoint-md) {
-      margin-top: 55px;
-    }
-  }
-
-  & .swiper {
-    &-pagination {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      min-width: 210px;
-      line-height: 1.221;
-      @include fontSize(18, 24);
-      @media (max-width: $breakpoint-md) {
-        top: 12px;
-        right: 15px;
-        left: auto;
-        bottom: auto;
-        min-width: max-content;
-      }
-
-      &-current {
-        font-size: 80px;
-        @include fontSize(60, 80);
-        line-height: 1;
-        color: $accent-color;
-        margin-right: 28px;
-        font-weight: 700;
-        @media (max-width: $breakpoint-md) {
-          margin-right: 7px;
-        }
-      }
-
-      &-total {
-        line-height: 1.221;
-        @include fontSize(18, 24);
-      }
-    }
-
-    &-button {
-      &-prev {
-        padding-right: 32px;
-
-      }
-
-      &-next {
-        padding-left: 32px;
-      }
-
-      &__wrap {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding: 36px;
-
-        z-index: 2;
-        @media (max-width: $breakpoint-md) {
-          padding: 24px;
-        }
-
-        &:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          backdrop-filter: blur(13px);
-          -webkit-backdrop-filter: blur(13px);
-          background-color: rgba(255, 255, 255, 0.2);
-          z-index: -1;
-        }
-      }
-    }
-  }
-
-  & .description {
-    padding-bottom: 80px;
-    @media (max-width: $breakpoint-md) {
-      padding-bottom: 0;
-    }
-  }
-
-  .history {
-    &-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-
-      &__wrap {
-        position: relative;
-        padding-bottom: 62%;
-        min-height: 100%;
-        @media (max-width: $breakpoint-md) {
-          min-height: 228px;
-        }
-      }
-    }
-
-    &__year {
-      margin-bottom: 18px;
-    }
-
-    &__name {
-      margin-bottom: 8px;
-      color: $black-main;
-    }
-
-    &__item {
-      padding-left: 20px;
-      @media (max-width: $breakpoint-md) {
-        padding-left: 0;
-      }
-    }
-  }
-}
 
 .s-team {
   &__top {
@@ -862,6 +709,4 @@
 
 }
 
-.s-partners {
 
-}

@@ -104,7 +104,7 @@ body {
 
 
 .body-padding {
-  height: 104px;
+  height: 160px;
   @media (max-width: $breakpoint-md) {
     height: 85px;
   }
@@ -304,6 +304,19 @@ body {
       }
     }
   }
+
+  &-pagination-progressbar {
+
+  }
+}
+
+.swiper-pagination.swiper-pagination-horizontal {
+  background: #EDEDF0;
+  height: 5px;
+  border-radius: 2px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
 }
 
 .top-link {
@@ -326,6 +339,7 @@ body {
     width: 45px;
     height: 45px;
     right: 15px;
+    bottom: 15px;
   }
 
   &.show {
