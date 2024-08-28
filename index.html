@@ -163,7 +163,7 @@
                                             </div>
 
                                             <a href="index.html"
-                                               class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
+                                               class="btn btn-primary d-flex align-middle"><span>Запис на консультацію</span>
                                                 <i class="icon-btn-arrow"></i> </a>
                                         </div>
                                     </div>
@@ -188,7 +188,7 @@
                                             </div>
                                         </div>
                                         <a href="index.html"
-                                           class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
+                                           class="btn btn-primary d-flex align-middle"><span>Запис на консультацію</span>
                                             <i class="icon-btn-arrow"></i> </a>
                                     </div>
                                 </div>
@@ -211,21 +211,13 @@
                                                 лікування.
                                             </div>
                                             <a href="index.html"
-                                               class="btn btn-primary d-flex align-center align-middle"><span>Запис на консультацію</span>
+                                               class="btn btn-primary d-flex align-middle"><span>Запис на консультацію</span>
                                                 <i class="icon-btn-arrow"></i> </a>
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="swiper-button__wrap d-flex align-left">
-                                    <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
-                                        <i class="icon-ar-left"></i> Назад
-                                    </div>
-                                    <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
-                                        Дальше <i class="icon-ar-right"></i>
-                                    </div>
-                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -234,7 +226,7 @@
         </div>
     </section>
 
-    <section class="s-about">
+    <section class="s-about --relative">
         <div class="container">
             <div class="row m-row ">
                 <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
@@ -242,7 +234,7 @@
                         <img src="assets/img/news-1.png" alt="" class="img">
                     </div>
                 </div>
-                <div class=" offset-1 offset-md-0col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
+                <div class=" offset-1 offset-md-0 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
                     <h1 class="heading text-bold">Про нашу клініку</h1>
                     <div class="description editor-style">
                         <p>З 2005 року в м. Київ працює діагностичний центр “Myslovych”, у якому основний напрямок
@@ -258,10 +250,12 @@
                 </div>
             </div>
         </div>
+
+        <img src="assets/img/decor.svg" alt="" class="decor-large">
     </section>
 
     <section class="section s-services">
-        <div class="container">
+        <div class="container ">
             <div class="row m-row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
                     <div class="heading__wrap --relative">
@@ -270,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row m-row align-center">
+            <div class="row m-row align-center d-none d-md-flex">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
                     <a href="services-inner.html" class="services__item d-block">
                         <img src="assets/img/services-1.jpg" alt="" class="services__img">
@@ -314,14 +308,55 @@
                     </a>
                 </div>
             </div>
+
+            <div class="row swiper-entry d-block d-md-none">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="swiper-container"
+                         data-options='{"slidesPerView":1, "spaceBetween": 15, "speed": 1200, "centeredSlides": false, "loop": true}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="services-inner.html" class="services__item d-block">
+                                    <img src="assets/img/services-1.jpg" alt="" class="services__img">
+                                    <div class="services__title text-semibold text-center">Трансплантація волосся</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="services-inner.html" class="services__item d-block">
+                                    <img src="assets/img/services-1.jpg" alt="" class="services__img">
+                                    <div class="services__title text-semibold text-center">Трансплантація волосся</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="services-inner.html" class="services__item d-block">
+                                    <img src="assets/img/services-1.jpg" alt="" class="services__img">
+                                    <div class="services__title text-semibold text-center">Трансплантація волосся</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="services-inner.html" class="services__item d-block">
+                                    <img src="assets/img/services-1.jpg" alt="" class="services__img">
+                                    <div class="services__title text-semibold text-center">Трансплантація волосся</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="services-inner.html" class="services__item d-block">
+                                    <img src="assets/img/services-1.jpg" alt="" class="services__img">
+                                    <div class="services__title text-semibold text-center">Трансплантація волосся</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <section class="s-doctors">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-center">
-
                     <div class="heading__wrap --relative">
                         <h3 class="heading text-bold text-xl text-center">Наші лікарі</h3>
                         <img src="assets/img/decor.svg" alt="" class="decor">
@@ -507,12 +542,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -533,12 +568,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -559,12 +594,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -611,12 +646,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -637,12 +672,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -663,12 +698,12 @@
                                     <ul class="social align-center">
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
+                                                <i class="icon-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="#" target="_self" class="d-flex align-center align-middle">
-                                                <img src="assets/img/facebook.svg" alt="facebook" class="social__img">
+                                                <i class="icon-facebook"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -676,7 +711,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -716,10 +753,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="s-consultation__form">
-
-            </div>
         </div>
     </section>
 
@@ -734,10 +767,10 @@
                 </div>
             </div>
 
-            <div class="row m-row">
+            <div class="row ">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="article__wrap">
-                        <a href="" class="article__item d-flex align-middle">
+                        <a href="" class="article__item align-middle">
                             <div class="article__img-wrap --relative">
                                 <img src="assets/img/news-1.png" alt="" class="article__img">
                                 <div class="article__date text-s --relative">
@@ -751,7 +784,7 @@
                             </div>
                         </a>
 
-                        <a href="" class="article__item d-flex align-middle">
+                        <a href="" class="article__item  align-middle">
                             <div class="article__img-wrap --relative">
                                 <img src="assets/img/news-1.png" alt="" class="article__img">
                                 <div class="article__date text-s --relative">
@@ -764,7 +797,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="article__item d-flex align-middle">
+                        <a href="" class="article__item align-middle">
                             <div class="article__img-wrap --relative">
                                 <img src="assets/img/news-1.png" alt="" class="article__img">
                                 <div class="article__date text-s --relative">
@@ -777,21 +810,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="article__item d-flex align-middle">
-                            <div class="article__img-wrap --relative">
-                                <img src="assets/img/news-1.png" alt="" class="article__img">
-                                <div class="article__date text-s --relative">
-                                    15.06.2024
-                                </div>
-                            </div>
-                            <div class="article__info">
-                                <div class="article__title text-regular text-uppercase">
-                                    “Myslovych”: цікаві факти про мережу медичних центрів
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="article__item d-flex align-middle">
+                        <a href="" class="article__item align-middle">
                             <div class="article__img-wrap --relative">
                                 <img src="assets/img/news-1.png" alt="" class="article__img">
                                 <div class="article__date text-s --relative">
@@ -805,7 +824,21 @@
                             </div>
                         </a>
 
-                        <a href="" class="article__item d-flex align-middle">
+                        <a href="" class="article__item align-middle">
+                            <div class="article__img-wrap --relative">
+                                <img src="assets/img/news-1.png" alt="" class="article__img">
+                                <div class="article__date text-s --relative">
+                                    15.06.2024
+                                </div>
+                            </div>
+                            <div class="article__info">
+                                <div class="article__title text-regular text-uppercase">
+                                    “Myslovych”: цікаві факти про мережу медичних центрів
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="article__item align-middle">
                             <div class="article__img-wrap --relative">
                                 <img src="assets/img/news-1.png" alt="" class="article__img">
                                 <div class="article__date text-s --relative">
@@ -1004,7 +1037,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="develop d-flex align-middle align-right">
                     <div class="develop__text">Розробка</div>
-                    <a href="" class="d-inline-flex align-items-center develop__link">
+                    <a href="" class="develop__link">
                         WEBTUNE
                     </a>
                 </div>
@@ -1149,6 +1182,22 @@
         e.preventDefault();
         scrollToTop();
     }
+</script>
+
+<script>
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar"
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+
 </script>
 </body>
 </html>
