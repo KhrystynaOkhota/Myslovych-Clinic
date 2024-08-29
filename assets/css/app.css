@@ -687,9 +687,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pagination .nav-links .page-numbers:not(.next, .prev):hover { background-color: transparent; color: #ffffff; }
 
 .accordion { padding-top: 8px; }
-.accordion-item { padding: 0; border-radius: 10px; background: #fff; border: 1px solid transparent; position: relative; background-clip: padding-box; }
+.accordion-item { padding: 0; border-radius: 10px; position: relative; background-clip: padding-box; background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box; border-radius: 10px; border: 1px solid transparent; }
 .accordion-item:not(.accordion-item:last-child) { margin-bottom: 15px; }
-.accordion-item::after { content: ''; position: absolute; top: -1px; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%); z-index: -1; border-radius: 10px; }
 .accordion-item__header { cursor: pointer; width: 100%; padding: 25px 50px 25px 25px; outline: none; font-weight: 700; font-size: 20px; font-size: -webkit-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); font-size: -moz-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); line-height: 15px; color: #000; position: relative; }
 .accordion-item__header img { width: 17px; object-fit: contain; margin-left: 4px; -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; position: absolute; top: calc(50% - 4px); right: 25px; }
 .accordion-item__body { display: none; }
@@ -851,9 +850,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 @media (max-width: 1199px) { .s-benefits .benefit__wrap { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 767px) { .s-benefits .benefit__wrap { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
 @media (max-width: 575px) { .s-benefits .benefit__wrap { grid-template-columns: 1fr; gap: 10px; } }
-.s-benefits .benefit__item { padding: 24px; background: #fff; border-radius: 10px; border: 1px solid transparent; position: relative; background-clip: padding-box; }
+.s-benefits .benefit__item { padding: 24px; position: relative; background-clip: padding-box; background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box; border-radius: 10px; border: 1px solid transparent; }
 @media (max-width: 767px) { .s-benefits .benefit__item { display: flex; justify-content: start; align-items: center; padding: 22px; } }
-.s-benefits .benefit__item::after { content: ''; position: absolute; top: -1px; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%); z-index: -1; border-radius: 10px; }
 .s-benefits .benefit__title { font-size: 24px; font-size: -webkit-calc(20px + (24 - 20) * ((100vw - 300px) / (1920 - 300))); font-size: -moz-calc(20px + (24 - 20) * ((100vw - 300px) / (1920 - 300))); font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1920 - 300))); }
 @media (max-width: 767px) { .s-benefits .benefit__title { width: calc(100% - 85px); text-align: left; } }
 .s-benefits .benefit__img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
@@ -974,8 +972,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .s-service-inner .btn + .btn { margin-left: 20px; }
 @media (max-width: 767px) { .s-service-inner .btn + .btn { margin: 12px 0 0 0; } }
 .s-service-inner .btn__wrap { margin-top: 16px; }
-.s-service-inner .btn-transparent { border: 1px solid transparent; position: relative; background-clip: padding-box; }
-.s-service-inner .btn-transparent::after { content: ''; position: absolute; top: -1px; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(88.24deg, green 0%, red 100%); z-index: -1; border-radius: 10px; }
+.s-service-inner .btn-transparent { background: linear-gradient(#ecedf0, #ecedf0) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box; border-radius: 10px; border: 1px solid transparent; }
+.s-service-inner .btn-transparent::after { content: ''; display: none; }
 .s-service-inner .service__title { margin-bottom: 16px; }
 @media (max-width: 767px) { .s-service-inner .service__title { text-align: center; } }
 @media (max-width: 767px) { .s-service-inner .kama_breadcrumbs { text-align: center; } }
