@@ -1,6 +1,12 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.mb-blog{
+  margin-bottom: 70px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 20px;
+  }
+}
 
 .s-grid {
   & .img {
@@ -33,7 +39,6 @@
     }
   }
 }
-
 
 .preload {
   height: 100%;
@@ -104,6 +109,9 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
       padding: 82px 0;
+      @media (max-width: $breakpoint-md) {
+        padding: 35px 0;
+      }
 
       &:after {
         content: '';
@@ -199,4 +207,35 @@
     }
   }
 
+}
+
+.s-gallery {
+  padding: 38px 0;
+
+  &.column {
+    @media (max-width: $breakpoint-md) {
+      padding: 0 4px;
+    }
+  }
+
+  & .m-row {
+    @media (max-width: $breakpoint-md) {
+      margin: 0 -4px;
+    }
+  }
+
+  & .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &__wrap {
+      position: relative;
+      padding-bottom: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
 }
