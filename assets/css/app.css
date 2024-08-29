@@ -628,6 +628,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .cta ::-moz-placeholder { color: #1D1D1B; }
 .cta :-ms-input-placeholder { color: #1D1D1B; }
 
+.mb-blog { margin-bottom: 70px; }
+@media (max-width: 767px) { .mb-blog { margin-bottom: 20px; } }
+
 .s-grid .img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; object-fit: cover; }
 .s-grid .img__wrap { position: relative; padding-bottom: 100%; }
 
@@ -645,6 +648,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .s-img-text__item:nth-child(odd) { padding: 38px 0; }
 @media (max-width: 767px) { .s-img-text__item:nth-child(odd) { padding: 28px 0 35px 0; } }
 .s-img-text__item:nth-child(even) { flex-direction: row-reverse; padding: 82px 0; }
+@media (max-width: 767px) { .s-img-text__item:nth-child(even) { padding: 35px 0; } }
 .s-img-text__item:nth-child(even):after { content: ''; width: 100vw; height: 100%; background: linear-gradient(81.5deg, #FFFFFF 21.75%, #E9EAEE 54.83%, #FFFFFF 82.21%); position: absolute; top: 0; left: 0; margin-left: calc((-100vw + 100%) / 2); z-index: -1; }
 
 .s-video__item:nth-child(odd) { padding: 82px 0; }
@@ -660,6 +664,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .s-download__inner { padding: 20px; background-color: #D8D6D1; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 @media (max-width: 600px) { .s-download__inner { text-align: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 32px; } }
 @media (max-width: 360px) { .s-download__inner { padding: 20px; } }
+
+.s-gallery { padding: 38px 0; }
+@media (max-width: 767px) { .s-gallery.column { padding: 0 4px; } }
+@media (max-width: 767px) { .s-gallery .m-row { margin: 0 -4px; } }
+.s-gallery .img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+.s-gallery .img__wrap { position: relative; padding-bottom: 100%; border-radius: 10px; overflow: hidden; }
 
 .pagination { width: 100%; background-color: transparent; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .pagination .screen-reader-text { display: none; }
