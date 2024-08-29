@@ -27,14 +27,10 @@
     <span></span>
 </div>
 
-<header class="header">
+<header class="header js-header">
     <!-- додати ці класи ===  js-header transparent ==== тільки на головну сторінку-->
     <div class=" container">
         <div class="header__inner d-flex align-middle align-justify">
-            <a href="index.html" class="logo__wrap">
-                <img src="assets/img/logo.svg" alt="Klan" class="logo">
-            </a>
-
             <div class="burger__wrap js-header align-middle align-center">
                 <div class="burger">
                     <span></span>
@@ -42,15 +38,85 @@
                     <span></span>
                 </div>
             </div>
+            <a href="index.html" class="logo__wrap">
+                <img src="assets/img/logo.svg" alt="Klan" class="logo">
+            </a>
+
+            <ul class="social d-flex d-md-none">
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" target="_self" class="d-flex align-center align-middle">
+                        <img src="assets/img/viber.svg" alt="viber" class="social__img">
+                    </a>
+                </li>
+            </ul>
 
             <div class="navbar">
+
+                <div class="navbar__top d-flex align-justify align-middle">
+
+
+                    <div class="contact d-flex align-middle align-left">
+
+
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/phone.svg" alt="" class="img">
+                            <a href="tel:+380999999999" class="contact__title text-medium">+38 (099) 999 99 99</a>
+                        </div>
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/pin.svg" alt="" class="contact__icon ">
+                            <a href="" class="contact__title text-medium">м.Київ, вул. Глибочицька, 23</a>
+                        </div>
+                        <div class="contact__item d-flex align-justify align-middle">
+                            <img src="assets/img/clock.svg" alt="" class="img">
+                            <div class="contact__title text-medium">ПН-ВС:з 8.00 до 20.00</div>
+                        </div>
+
+                    </div>
+
+
+                    <ul class="social d-none d-md-flex">
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/telegram.svg" alt="telegram" class="social__img">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_self" class="d-flex align-center align-middle">
+                                <img src="assets/img/viber.svg" alt="viber" class="social__img">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
                 <nav class="navbar__menu">
                     <ul class="menu">
                         <li class="menu-item ">
-                            <a href="about.html">О нас</a>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="price.html">Ціни</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="services.html">Послуги</a>
                         </li>
                         <li class="menu-item">
-                            <a href="portfolio.html"> Портфолио</a>
+                            <a href="doctors.html">Лікарі</a>
                         </li>
                         <li class="menu-item">
                             <a href="blog.html">Новости</a>
@@ -61,38 +127,6 @@
                         </li>
                     </ul>
                 </nav>
-
-                <div class="d-flex align-justify align-middle header__contacts">
-                    <a href="tel:000000000000" target="_blank" class="navbar__phone text-s text-semibold">+0 000 000 00
-                        00</a>
-                    <ul class="social d-flex d-md-none">
-                        <li class="social__item d-flex align-center align-middle">
-                            <a href="">
-                                <img src="assets/img/instagram.svg" alt="instagram" class="social__img">
-                            </a>
-                        </li>
-                        <li class="social__item d-flex align-center align-middle">
-                            <a href="">
-                                <img src="assets/img/whatsapp.svg" alt="whatsapp" class="social__img">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="lang__wrap --relative">
-                    <div class="lang__current d-flex align-middle">
-                        <a href="/ru/">RU</a> <i class="icon-ar-bottom"></i> <!--поточна мова-->
-                    </div>
-
-                    <ul class="lang">
-                        <li class="lang-item"><a href="ru">RU</a>
-                        </li>
-                        <li class="lang-item "><a href="eng">ENG</a>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </div>
