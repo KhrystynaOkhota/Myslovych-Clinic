@@ -195,20 +195,14 @@
 
     &-transparent {
 
+      background: linear-gradient(#ecedf0, #ecedf0) padding-box,linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+      border-radius: 10px;
       border: 1px solid transparent;
-      position: relative;
-      background-clip: padding-box;
+
 
       &::after {
         content: '';
-        position: absolute;
-        top: -1px;
-        bottom: -1px;
-        left: -1px;
-        right: -1px;
-        background: linear-gradient(88.24deg, green 0%, red 100%);
-        z-index: -1;
-        border-radius: 10px;
+       display: none;
       }
     }
   }

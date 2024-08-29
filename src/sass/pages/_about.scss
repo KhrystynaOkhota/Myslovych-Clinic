@@ -469,11 +469,11 @@
 
     &__item {
       padding: 24px;
-      background: #fff;
-      border-radius: 10px;
-      border: 1px solid transparent;
       position: relative;
       background-clip: padding-box;
+      background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+      border-radius: 10px;
+      border: 1px solid transparent;
 
       @media (max-width: $breakpoint-md) {
         display: flex;
@@ -481,19 +481,6 @@
         align-items: center;
         padding: 22px;
       }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: -1px;
-        bottom: -1px;
-        left: -1px;
-        right: -1px;
-        background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
-        z-index: -1;
-        border-radius: 10px;
-      }
-
     }
 
     &__title {

@@ -11,26 +11,17 @@
     //overflow: hidden;
 
     border-radius: 10px;
-    background: #fff;
-    border: 1px solid transparent;
     position: relative;
     background-clip: padding-box;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+    border-radius: 10px;
+    border: 1px solid transparent;
 
     &:not(&:last-child) {
       margin-bottom: 15px;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: -1px;
-      bottom: -1px;
-      left: -1px;
-      right: -1px;
-      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
-      z-index: -1;
-      border-radius: 10px;
-    }
+
 
     &__header {
       cursor: pointer;
