@@ -127,6 +127,9 @@
 
 .s-service-inner {
   padding: 73px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 28px 0 35px 0;
+  }
 
   &:after {
     content: '';
@@ -137,10 +140,16 @@
     top: 0;
     left: 0;
     z-index: -1;
+    @media (max-width: $breakpoint-md) {
+      height: 100%;
+    }
   }
 
   & .content {
     padding: 63px 0 160px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
   }
 
   & .img {
@@ -152,12 +161,24 @@
       height: calc(100% + 73px);
       border-radius: 10px;
       overflow: hidden;
+      @media (max-width: $breakpoint-md) {
+        margin: 18px 0 9px 0;
+        height: auto;
+      }
     }
   }
 
   & .btn {
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      max-width: 100%;
+    }
+
     & + .btn {
       margin-left: 20px;
+      @media (max-width: $breakpoint-md) {
+        margin: 12px 0 0 0;
+      }
     }
 
     &__wrap {
@@ -169,6 +190,15 @@
   & .service {
     &__title {
       margin-bottom: 16px;
+      @media (max-width: $breakpoint-md) {
+        text-align: center;
+      }
+    }
+  }
+
+  & .kama_breadcrumbs {
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
     }
   }
 }

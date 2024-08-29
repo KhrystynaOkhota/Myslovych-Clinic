@@ -81,6 +81,16 @@
 }
 
 .s-img-text {
+  & .img {
+    &__wrap {
+      border-radius: 10px;
+      overflow: hidden;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
   &__item {
     &:nth-child(odd) {
       padding: 38px 0;
@@ -107,40 +117,6 @@
         margin-left: calc((-100vw + 100%) / 2);
         z-index: -1;
       }
-    }
-  }
-}
-
-.s-gallery {
-  padding: 38px 0;
-  @media (max-width: $breakpoint-sm) {
-    padding: 17px 0;
-  }
-
-  & .m-row {
-    @media (max-width: $breakpoint-sm) {
-      margin: 0 -5px;
-    }
-  }
-
-  & .column {
-    @media (max-width: $breakpoint-sm) {
-      padding: 0 5px;
-    }
-  }
-
-  & .img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-
-    &__wrap {
-      padding-top: 100%;
-      border-radius: 10px;
-      overflow: hidden;
     }
   }
 }

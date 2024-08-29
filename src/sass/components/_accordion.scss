@@ -35,19 +35,22 @@
     &__header {
       cursor: pointer;
       width: 100%;
-      padding: 25px;
+      padding: 25px 50px 25px 25px;
       outline: none;
       font-weight: 700;
       @include fontSize(16, 20);
       line-height: 15px;
       color: #000;
-
+      position: relative;
 
       & img {
         width: 17px;
         object-fit: contain;
         margin-left: 4px;
-        @include transition(.4)
+        @include transition(.4);
+        position: absolute;
+        top: calc(50% - 4px);
+        right: 25px;
       }
 
     }
