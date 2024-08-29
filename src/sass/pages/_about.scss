@@ -276,6 +276,9 @@
     position: absolute;
     right: -134px;
     bottom: -60px;
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
   }
 
   & .heading {
@@ -298,9 +301,7 @@
       height: 205px;
       top: 0;
       left: -59px;
-      @media (max-width: $breakpoint-md) {
-        display: none;
-      }
+
     }
   }
 

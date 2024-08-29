@@ -142,6 +142,7 @@
     width: 100%;
     height: calc(100% - 73px);
     background: linear-gradient(263.89deg, #E9EAEE 59.25%, #FFFFFF 100%);
+
     position: absolute;
     top: 0;
     left: 0;
@@ -190,6 +191,25 @@
     &__wrap {
       margin-top: 16px;
 
+    }
+
+    &-transparent {
+
+      border: 1px solid transparent;
+      position: relative;
+      background-clip: padding-box;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+        background: linear-gradient(88.24deg, green 0%, red 100%);
+        z-index: -1;
+        border-radius: 10px;
+      }
     }
   }
 

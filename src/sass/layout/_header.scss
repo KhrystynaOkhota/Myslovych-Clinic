@@ -4,7 +4,8 @@
 
 .logo {
   &__wrap {
-    width: 206px;
+    width: 180px;
+    height: 120px;
     display: block;
     @media (max-width: $breakpoint-md) {
       width: 85px;
@@ -26,22 +27,21 @@
   opacity: 1;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
   @include transition(.5);
-  padding: 16px 0;
+  padding: 19px 0;
   @media (max-width: $breakpoint-md) {
     padding: 13px 0;
   }
 
   & .contact {
-    align-self: stretch;
-    flex-grow: 1;
+    width: calc(100% - 180px);
     @media (max-width: $breakpoint-lg) {
       display: block;
-
+      padding: 27px 0;
+      width: auto;
     }
 
     &__title {
       color: #fff;
-      width: calc(100% - 28px);
       font-size: 20px;
     }
 
@@ -54,8 +54,14 @@
     }
 
     &__item {
-      align-self: stretch;
-      flex-grow: 1;
+      // align-self: stretch;
+      //flex-grow: 1;
+      @media (max-width: $breakpoint-lg) {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
 
       & + .contact__item {
         margin-left: 15px;
@@ -68,9 +74,10 @@
 
   & .social {
 
-    @media only screen and (max-width: 1200px) and (min-width: 991px)  {
-      display: none!important;
+    @media only screen and (max-width: 1200px) and (min-width: 991px) {
+      display: none !important;
     }
+
     &__item {
       & + .social__item {
         margin-left: 15px;
@@ -104,8 +111,8 @@
 
   & .navbar {
     @media (min-width: $breakpoint-lg) {
-      width: calc(100% - 240px);
-      max-width: 800px;
+      width: calc(100% - 270px);
+      max-width: 880px;
     }
     @media (max-width: $breakpoint-lg) {
       height: calc(100vh - 83px);
@@ -117,8 +124,8 @@
       width: 100%;
       right: -100%;
       overflow: auto;
-      display: grid;
-      align-items: start;
+      display: flex;
+      flex-direction: column;
       &.is-visible {
         right: 0;
         transition: all .5s ease;
