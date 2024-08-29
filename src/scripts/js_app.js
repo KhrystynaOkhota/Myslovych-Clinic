@@ -212,3 +212,33 @@ jQuery(function () {
             $(".navbar").toggleClass("is-visible")
     })
 });
+
+
+
+
+// about page
+$('.preload__btn').on('click', function () {
+    $(this).parents(".preload-entry").find(".preload").css({
+        'z-index': -1,
+        'opacity': 0
+    });
+    $(this).parents(".preload-entry").find("video").css({
+        "display": "block"
+    });
+    $(this).parents(".preload-entry").find(".btn-play").css({
+        "display": "none"
+    });
+
+    var video = $(this).parents(".preload-entry").find("video")[0];
+
+
+    if (video.paused === false) {
+        $(this).parents(".preload-entry").find('.--pause').removeClass("d-block").addClass("d-none");
+        $(this).parents(".preload-entry").find('.--play').removeClass("d-none").addClass("d-block");
+        video.pause();
+    } else {
+        video.play();
+        $(this).parents(".preload-entry").find('.--play').removeClass("d-block").addClass("d-none");
+        $(this).parents(".preload-entry").find('.--pause').removeClass("d-none").addClass("d-block");
+    }
+});

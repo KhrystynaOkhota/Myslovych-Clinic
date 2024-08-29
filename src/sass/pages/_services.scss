@@ -123,6 +123,12 @@
     padding: 18px 25px 25px 25px;
     border-top: 1px solid #D9D9D9;
   }
+
+  & .editor-style {
+    & p {
+      @include fontSize(16, 20);
+    }
+  }
 }
 
 .s-service-inner {

@@ -1,7 +1,7 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.mb-blog{
+.mb-blog {
   margin-bottom: 70px;
   @media (max-width: $breakpoint-md) {
     margin-bottom: 20px;
@@ -52,8 +52,9 @@
   &__wrap {
 
     position: relative;
-    padding-bottom: 50%;
+    padding-bottom: 62%;
     overflow: hidden;
+    border-radius: 10px;
 
     & video {
       width: 100%;
@@ -175,6 +176,11 @@
   padding: 84px 0;
   background: linear-gradient(81.5deg, #FFFFFF 21.75%, #E9EAEE 54.83%, #FFFFFF 82.21%);
   margin-bottom: 68px;
+  @media (max-width: $breakpoint-md) {
+    text-align: center;
+    padding: 38px 0;
+    margin-bottom: 34px;
+  }
 
   & .heading {
     @media (max-width: 600px) {
@@ -183,7 +189,10 @@
   }
 
   & .description {
-    font-size: 20px;
+    @include fontSize(16, 20);
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
   }
 
   &__inner {
@@ -212,7 +221,7 @@
 .s-gallery {
   padding: 38px 0;
 
-  &.column {
+  & .column {
     @media (max-width: $breakpoint-md) {
       padding: 0 4px;
     }
