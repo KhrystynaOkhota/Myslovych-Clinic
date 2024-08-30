@@ -20,15 +20,21 @@ jQuery(function ($) {
     }
 
     /*new slider*/
-    _functions.getSwOptions = function(swiper) {
+    _functions.getSwOptions = function (swiper) {
         var options = swiper.data('options');
         options = (!options || typeof options !== 'object') ? {} : options;
         var $p = swiper.closest('.swiper-entry'),
-        slidesLength = swiper.find('>.swiper-wrapper>.swiper-slide').length;
-        if (!options.pagination)
+            slidesLength = swiper.find('>.swiper-wrapper>.swiper-slide').length;
+        if (options.progressbar)
             options.pagination = {
                 el: $p.find('.swiper-pagination')[0],
                 type: 'progressbar',
+                clickable: true
+            };
+
+        if (!options.pagination)
+            options.pagination = {
+                el: $p.find('.swiper-pagination')[0],
                 clickable: true
             };
         if (!options.navigation)
@@ -63,10 +69,10 @@ jQuery(function ($) {
         return options;
     }
     ;
-    _functions.initSwiper = function(el) {
-        var swiper = new Swiper(el[0],_functions.getSwOptions(el));
+    _functions.initSwiper = function (el) {
+        var swiper = new Swiper(el[0], _functions.getSwOptions(el));
     };
-    $('.swiper-entry .swiper-container').each(function() {
+    $('.swiper-entry .swiper-container').each(function () {
         _functions.initSwiper($(this));
     });
 
@@ -74,7 +80,7 @@ jQuery(function ($) {
     $('.custom-fraction').each(function () {
         var $this = $(this),
             $thisSwiper = $this.find('.swiper-container')[0].swiper,
-        currentSlide = $thisSwiper.realIndex + 1;
+            currentSlide = $thisSwiper.realIndex + 1;
         $thisSwiper.on('slideChange', function () {
             $this.find('.custom-current').text(
                 function () {
@@ -90,21 +96,22 @@ jQuery(function ($) {
     });
 
 
-    $('.swiper-thumbs').each(function() {
+    $('.swiper-thumbs').each(function () {
         var top = $(this).find('.swiper-container.swiper-thumbs-top')[0].swiper
             , bottom = $(this).find('.swiper-container.swiper-thumbs-bottom')[0].swiper;
         top.thumbs.swiper = bottom;
         top.thumbs.init();
         top.thumbs.update();
     });
-    $('.swiper-control').each(function() {
+    $('.swiper-control').each(function () {
         var top = $(this).find('.swiper-container')[0].swiper
             , bottom = $(this).find('.swiper-container')[1].swiper;
         top.controller.control = bottom;
         bottom.controller.control = top;
     });
+
     function slideLength() {
-        $('.swiper-entry .swiper-container').each(function() {
+        $('.swiper-entry .swiper-container').each(function () {
             var th = $(this)
                 , slidesLength = $(this).find('.swiper-slide').length
                 , visibleSlidesLength = $(this).find('.swiper-slide-visible').length;
@@ -113,8 +120,9 @@ jQuery(function ($) {
             }
         });
     }
+
     slideLength();
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         slideLength();
     });
 
@@ -173,20 +181,18 @@ jQuery(function ($) {
     _functions.coolNav = function () {
         let r = $(".js-header");
         $(window).on("scroll", (function () {
-                $(window).scrollTop() > 30 ? r.removeClass("transparent")  : r.addClass("transparent")
+                $(window).scrollTop() > 30 ? r.removeClass("transparent") : r.addClass("transparent")
             }
         ));
     };
     _functions.coolNav();
 
 
-
-
 });
 
 function scrollAnime() {
     if ($('.animation').length) {
-        $('.animation').not('.animated').each(function() {
+        $('.animation').not('.animated').each(function () {
             var th = $(this);
             if ($(window).width() < 768) {
                 if ($(window).scrollTop() >= th.offset().top - ($(window).height() * 0.95)) {
@@ -200,9 +206,10 @@ function scrollAnime() {
         });
     }
 }
+
 //scrollAnime();
 $(window).on('scroll', function () {
-   //scrollAnime();
+    //scrollAnime();
 });
 
 
@@ -212,8 +219,6 @@ jQuery(function () {
             $(".navbar").toggleClass("is-visible")
     })
 });
-
-
 
 
 // about page

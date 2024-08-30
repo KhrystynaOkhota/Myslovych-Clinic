@@ -155,39 +155,6 @@ body {
     }
   }
 
-  &-pagination {
-    position: relative;
-    bottom: 0;
-    margin-top: 0;
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    z-index: 2 !important;
-
-    @media (max-width: $breakpoint-md) {
-      display: flex;
-    }
-
-    &.swiper-pagination-horizontal {
-      width: auto;
-    }
-
-    &-bullet {
-      font-size: 0;
-      width: 6px;
-      height: 6px;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 100%;
-      margin: 0 3.5px;
-
-      @include transition(.4);
-
-      &:hover, &-active {
-        background-color: rgba(255, 255, 255, 1);
-        transform: scale(1.2);
-      }
-    }
-  }
 
   &-controls {
 
@@ -306,8 +273,10 @@ body {
   }
 
   &-pagination-progressbar {
-
+    position: relative;
+    top:auto;
   }
+
 }
 
 .swiper-pagination.swiper-pagination-horizontal {

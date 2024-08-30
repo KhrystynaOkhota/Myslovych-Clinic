@@ -31,6 +31,7 @@
       min-width: 214px;
       padding: 20px;
       border-radius: 10px;
+      @include transition(.4);
       @media (max-width: $breakpoint-md) {
         min-width: 180px;
       }
@@ -50,7 +51,9 @@
     }
 
     &:hover {
-
+      & span {
+        background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      }
     }
   }
 
@@ -98,7 +101,7 @@
     padding: 20px;
     background-color: #fff;
     font-size: 20px;
-    color:#928C89;
+    color: #928C89;
   }
 
   &-close {

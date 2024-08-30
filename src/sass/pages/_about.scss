@@ -266,8 +266,24 @@
 
 .s-about {
   padding: 90px 0;
-  @media (max-width: $breakpoint-md) {
-    padding: 30px 0;
+
+  &.home {
+    @media (max-width: $breakpoint-md) {
+      padding: 0 0 30px 0;
+
+      & .img {
+        &__wrap {
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+
+  &:not(.home) {
+    @media (max-width: $breakpoint-md) {
+      padding: 30px 0;
+    }
+
   }
 
   & .decor-large {
@@ -411,6 +427,7 @@
   @media (max-width: $breakpoint-md) {
     padding-top: 35px;
   }
+
   & .heading {
     &__wrap {
       padding-left: 59px;
