@@ -125,7 +125,9 @@
     display: flex;
     align-items: center;
     justify-content: start;
-
+    @media only screen and (max-width: 1180px) and (min-width: $breakpoint-md) {
+      margin-left: 15px;
+    }
     @media (max-width: $breakpoint-md) {
       bottom: 70px;
       justify-content: center;
@@ -214,6 +216,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: left;
+
+    @media only screen and (max-width: 1180px) and (min-width: $breakpoint-md) {
+      padding-left: 15px;
+    }
     @media (max-width: $breakpoint-md) {
       text-align: center;
       transform: none;

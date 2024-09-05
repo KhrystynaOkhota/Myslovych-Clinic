@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   position: fixed;
-  background:  #1D1D1B url(../img/bg-footer.svg) top ;
+  background: #1D1D1B url(../img/bg-footer.svg) top;
   z-index: 10;
   visibility: visible;
   opacity: 1;
@@ -34,6 +34,10 @@
 
   & .contact {
     width: calc(100% - 180px);
+
+    @media only screen and (max-width: 1200px) and (min-width: 991px) {
+      width: 100%;
+    }
     @media (max-width: $breakpoint-lg) {
       display: block;
       padding: 27px 0;
@@ -168,29 +172,10 @@
             padding: 25px 15px;
             border-bottom: 1px solid rgba(0, 0, 0, .2);
           }
-          @media (min-width: $breakpoint-lg) {
-            &:after {
-              content: '';
-              width: 0;
-              height: 1px;
-              background-color: #000;
-              position: absolute;
-              bottom: 0;
-              left: 50%;
-              transform: translateX(-50%);
-              @include transition(.5);
-            }
-          }
         }
 
         &:hover, &.current-menu-item {
           & > a {
-            @media (min-width: $breakpoint-lg) {
-              &:after {
-                width: 40px;
-                @include transition(.5);
-              }
-            }
           }
         }
 
