@@ -28,8 +28,11 @@
     }
 
     & td {
+      width: 60%;
       &:nth-child(2) {
+
         text-align: right;
+        width: 40%;
       }
 
       & b {
@@ -43,6 +46,9 @@
       @include fontSize(18, 20);
 
       padding: 25px;
+      @media (max-width: $breakpoint-md) {
+        padding: 20px;
+      }
     }
   }
 }

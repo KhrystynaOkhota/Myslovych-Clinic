@@ -120,7 +120,7 @@
     }
     @media (max-width: $breakpoint-lg) {
       height: calc(100vh - 83px);
-      background-color: #000;
+      background: #1D1D1B url(../img/bg-footer.svg) top;
       position: fixed;
       top: 83px;
       transition: all 1.2s ease;
@@ -170,7 +170,6 @@
           display: block;
           @media (max-width: $breakpoint-lg) {
             padding: 25px 15px;
-            border-bottom: 1px solid rgba(0, 0, 0, .2);
           }
         }
 
