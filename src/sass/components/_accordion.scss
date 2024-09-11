@@ -90,6 +90,7 @@
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
   border-radius: 10px;
   border: 1px solid transparent;
+
   &:not(&:last-child) {
     margin-bottom: 15px;
   }
@@ -98,6 +99,7 @@
 .accordeon-title {
   position: relative;
   cursor: pointer;
+
   &:after {
     width: 16px;
     height: 16px;
@@ -113,6 +115,7 @@
     transition: .25s;
     -webkit-transition: 0.25s;
   }
+
   &.align {
     vertical-align: middle;
     cursor: pointer;
@@ -129,7 +132,6 @@
     position: relative;
   }
 }
-
 
 
 .accordeon-title.active:after {
@@ -159,7 +161,14 @@
 }
 
 .accordeon-toggle {
-  display: none
+  display: none;
+
+  &__content {
+    padding: 18px 25px 25px 25px;
+    position: relative;
+    border-top: 1px solid rgba(217, 217, 217, 1);
+
+  }
 }
 
 @media (max-width: 767px) {
