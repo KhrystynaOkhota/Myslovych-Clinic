@@ -2,10 +2,15 @@
 @import "../abstracts/variables";
 
 .s-services {
+
   background: linear-gradient(81.5deg, #FFFFFF 21.75%, #E9EAEE 54.83%, #FFFFFF 82.21%);
   padding: 71px 0 90px 0;
   @media (max-width: $breakpoint-md) {
     padding: 35px 0;
+  }
+
+  &.no-bg {
+    background: #fff;
   }
 
   & .heading {
@@ -195,14 +200,14 @@
 
     &-transparent {
 
-      background: linear-gradient(#ecedf0, #ecedf0) padding-box,linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+      background: linear-gradient(#ecedf0, #ecedf0) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
       border-radius: 10px;
       border: 1px solid transparent;
 
 
       &::after {
         content: '';
-       display: none;
+        display: none;
       }
     }
   }

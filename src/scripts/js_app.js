@@ -247,3 +247,10 @@ $('.preload__btn').on('click', function () {
         $(this).parents(".preload-entry").find('.--pause').removeClass("d-none").addClass("d-block");
     }
 });
+
+
+$('.accordeon-title').on('click', function () {
+    var accordeon = $(this).closest('.accordeon');
+    accordeon.find('.accordeon-title.active').not(this).removeClass('active').next().slideUp();
+    $(this).toggleClass('active').next().slideToggle();
+});
