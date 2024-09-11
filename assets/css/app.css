@@ -705,6 +705,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .accordeon-title .align { vertical-align: middle; cursor: pointer; width: 100%; padding: 25px 50px 25px 25px; outline: none; font-weight: 700; font-size: 20px; font-size: -webkit-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); font-size: -moz-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300))); line-height: 15px; color: #000; position: relative; }
 
 .accordeon-toggle { display: none; }
+.accordeon-toggle__content { padding: 18px 25px 25px 25px; position: relative; border-top: 1px solid #d9d9d9; }
 
 @media (max-width: 767px) { .accordeon-title .align { padding-left: 15px; }
   .accordeon-toggle { padding: 0 15px 20px; } }
